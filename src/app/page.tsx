@@ -1,10 +1,14 @@
 import UTMBridge from "../components/UTMBridge";
+import GeoBanner from "../components/GeoBanner";
 import CTALink from "../components/CTALink";
 
 export default function Home() {
   return (
     <div className="font-sans text-white bg-black">
       <UTMBridge />
+
+      {/* Aviso topo com localização baseada no IP */}
+      <GeoBanner />
 
 
       <main>
