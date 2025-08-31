@@ -1,13 +1,10 @@
 import UTMBridge from "../components/UTMBridge";
+import CTALink from "../components/CTALink";
 
 export default function Home() {
   return (
     <div className="font-sans text-white bg-black">
       <UTMBridge />
-      {/* Aviso topo */}
-      <div className="w-full bg-red-700 text-white text-center text-sm py-2">
-        Pessoas da sua região de Cuiabá estão comprando este produto neste exato momento
-      </div>
 
 
       <main>
@@ -102,12 +99,14 @@ export default function Home() {
               </ul>
               <p className="text-sm text-neutral-400">De R$ 59,70 por apenas:</p>
               <p className="text-2xl font-bold mb-4 text-white">R$ 39,90</p>
-              <a
-                href="https://pay.kirvano.com/17344977-6382-47de-aa1a-021740143d2d"
+              <CTALink
+                href="https://pay.kirvano.com/17344977-6382-47de-aa1a-021740143d2d?aff=25997249-8f0f-4cd2-a1c2-023be55ede80"
                 className="cta_btn mt-auto mb-6 inline-flex justify-center rounded-md bg-red-600 text-white px-4 py-2 font-semibold hover:bg-red-700 transition-colors"
+                eventName="InitiateCheckout"
+                eventParams={{ plan: "Trimestral Promo", price: 39.9, currency: "BRL" }}
               >
                 QUERO ASSINAR AGORA!
-              </a>
+              </CTALink>
               </div>
             </div>
 
@@ -128,12 +127,14 @@ export default function Home() {
               </ul>
               <p className="text-sm text-neutral-400">De R$ 24,90 por apenas:</p>
               <p className="text-2xl font-bold mb-4 text-white">R$ 19,90</p>
-              <a
-                href="https://pay.kirvano.com/6026d4be-6c16-4869-85e7-b49181f23523"
+              <CTALink
+                href="https://pay.kirvano.com/6026d4be-6c16-4869-85e7-b49181f23523?aff=25997249-8f0f-4cd2-a1c2-023be55ede80"
                 className="cta_btn mt-auto mb-6 inline-flex justify-center rounded-md bg-red-600 text-white px-4 py-2 font-semibold hover:bg-red-700 transition-colors"
+                eventName="InitiateCheckout"
+                eventParams={{ plan: "Mensal Promo", price: 19.9, currency: "BRL" }}
               >
                 QUERO ASSINAR AGORA!
-              </a>
+              </CTALink>
               </div>
             </div>
 
@@ -154,12 +155,14 @@ export default function Home() {
               </ul>
               <p className="text-sm text-neutral-400">De R$ 238,80 por apenas:</p>
               <p className="text-2xl font-bold mb-4 text-white">R$ 129,90</p>
-              <a
-                href="https://pay.kirvano.com/10c9b8cd-0202-4e77-86fe-9c63fbe0c613"
+              <CTALink
+                href="https://pay.kirvano.com/10c9b8cd-0202-4e77-86fe-9c63fbe0c613?aff=25997249-8f0f-4cd2-a1c2-023be55ede80"
                 className="cta_btn mt-auto mb-6 inline-flex justify-center rounded-md bg-red-600 text-white px-4 py-2 font-semibold hover:bg-red-700 transition-colors"
+                eventName="InitiateCheckout"
+                eventParams={{ plan: "Anual Promo", price: 129.9, currency: "BRL" }}
               >
                 QUERO ASSINAR AGORA!
-              </a>
+              </CTALink>
               </div>
             </div>
 
@@ -180,12 +183,14 @@ export default function Home() {
               </ul>
               <p className="text-sm text-neutral-400">De R$ 119,40 por apenas:</p>
               <p className="text-2xl font-bold mb-4 text-white">R$ 69,90</p>
-              <a
-                href="https://pay.kirvano.com/391cb7e8-9744-49d2-84ae-7b4aef946081"
+              <CTALink
+                href="https://pay.kirvano.com/391cb7e8-9744-49d2-84ae-7b4aef946081?aff=25997249-8f0f-4cd2-a1c2-023be55ede80"
                 className="cta_btn mt-auto mb-6 inline-flex justify-center rounded-md bg-red-600 text-white px-4 py-2 font-semibold hover:bg-red-700 transition-colors"
+                eventName="InitiateCheckout"
+                eventParams={{ plan: "Semestral Promo", price: 69.9, currency: "BRL" }}
               >
                 QUERO ASSINAR AGORA!
-              </a>
+              </CTALink>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import MetaPixel from "../components/MetaPixel";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -27,6 +28,10 @@ export const metadata: Metadata = {
   description:
     "Mais de 2000 canais, filmes e séries. Assista em Smart TV, Smartphone, TV Box e PC. Planos a partir de R$ 19,90/mês.",
   metadataBase: new URL("http://localhost:3000"),
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "REIFLICK | Assista Filmes, Séries e Canais ao Vivo",
     description:
@@ -62,6 +67,7 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${geistMono.variable} antialiased`}
       >
+        <MetaPixel />
         {children}
       </body>
     </html>
