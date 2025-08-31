@@ -4,13 +4,13 @@ import React from "react";
 
 declare global {
   interface Window {
-    fbq?: any;
+    fbq?: (...args: unknown[]) => void;
   }
 }
 
 type Props = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   eventName?: string; // default: 'InitiateCheckout'
-  eventParams?: Record<string, any>;
+  eventParams?: Record<string, unknown>;
 };
 
 export default function CTALink({ eventName = "InitiateCheckout", eventParams = {}, onClick, ...rest }: Props) {
@@ -19,7 +19,7 @@ export default function CTALink({ eventName = "InitiateCheckout", eventParams = 
       if (typeof window !== "undefined" && typeof window.fbq === "function") {
         window.fbq("track", eventName, eventParams);
       }
-    } catch (err) {
+    } catch {
       // fail safe: do nothing
     }
     if (onClick) onClick(e);

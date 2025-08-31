@@ -37,7 +37,7 @@ export async function GET(req: Request) {
     const country_name = data?.country_name ?? null;
 
     return NextResponse.json({ city, region, country_name }, { status: 200 });
-  } catch (err) {
+  } catch {
     return NextResponse.json({ city: null, region: null, country_name: null }, { status: 200 });
   }
 }

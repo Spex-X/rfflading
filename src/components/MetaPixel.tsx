@@ -9,7 +9,7 @@ const PIXEL_ID = "768510889448723";
 
 declare global {
   interface Window {
-    fbq?: any;
+    fbq?: (...args: unknown[]) => void;
   }
 }
 
@@ -22,7 +22,6 @@ export default function MetaPixel() {
     if (typeof window !== "undefined" && typeof window.fbq === "function") {
       window.fbq("track", "PageView");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname, searchParams]);
 
   return (
