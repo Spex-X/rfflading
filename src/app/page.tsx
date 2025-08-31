@@ -1,6 +1,7 @@
 import UTMBridge from "../components/UTMBridge";
 import GeoBanner from "../components/GeoBanner";
 import CTALink from "../components/CTALink";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -30,11 +31,14 @@ export default function Home() {
           <div className="relative px-6 py-16 sm:py-24">
             <div className="max-w-6xl mx-auto">
               <div className="max-w-2xl">
-                <img
+                <Image
                   src="/uploads/2024/10/logo-transparente.png"
                   alt="REIFLICK"
+                  width={480}
+                  height={130}
+                  priority
                   className="h-[112px] sm:h-[128px] w-auto mb-3 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
-                  loading="eager"
+                  sizes="(max-width: 640px) 240px, 480px"
                 />
                 <h1 className="text-xl sm:text-3xl font-extrabold tracking-tight text-white mb-2 leading-tight">
                   CONTEÚDO DE QUALIDADE,
@@ -210,7 +214,7 @@ export default function Home() {
               {/* Dispositivos */}
               <div className="rounded-lg border border-red-800 bg-[#140b0b] p-0 overflow-hidden flex flex-col min-h-[380px] md:min-h-[480px] lg:max-w-[320px] w-full mx-auto">
                 <div className="h-52 md:h-72 bg-[#1a0e0e] flex items-center justify-center">
-                  <img src="/uploads/2025/01/LOGO-1.webp" alt="REIFLICK" className="h-20 md:h-28 w-auto" />
+                  <Image src="/uploads/2025/01/LOGO-1.webp" alt="REIFLICK" width={200} height={112} className="h-20 md:h-28 w-auto" />
                 </div>
                 <div className="px-3 py-4 md:px-4 md:py-5 flex-1">
                   <h3 className="font-semibold">Disponível em Todos os Dispositivos</h3>
@@ -293,11 +297,12 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-6 py-10">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="shrink-0">
-                <img
+                <Image
                   src="/uploads/2025/02/7-dias.png.png"
                   alt="Garantia de 7 dias"
+                  width={240}
+                  height={112}
                   className="h-24 sm:h-28 w-auto"
-                  loading="lazy"
                 />
               </div>
               <div className="text-center md:text-left">
@@ -324,7 +329,7 @@ export default function Home() {
             <h3 className="text-lg sm:text-xl font-semibold mb-1">Ainda está com dúvidas sobre a REIFLICK?</h3>
             <p className="text-sm text-white/90 mb-4">Fale com nosso time agora mesmo pelo WhatsApp.</p>
             <a
-              href="https://api.whatsapp.com/send/?phone=554391768151&text=Ola+vim+do+site+quero+ajuda&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=5565993553425&text=Ola+vim+do+site+quero+ajuda&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className="signin__button inline-flex w-full sm:w-auto items-center justify-center rounded-md bg-green-600 text-white px-5 py-2.5 font-semibold hover:bg-green-700 transition-colors"

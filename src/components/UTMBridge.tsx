@@ -42,7 +42,7 @@ export default function UTMBridge() {
         );
         if (contactButton) {
           const message = encodeURIComponent(`Ola vim do ${utmSource}`);
-          const waUrl = `https://wa.me/554391768151?text=${message}`;
+          const waUrl = `https://wa.me/5565993553425?text=${message}`;
           contactButton.setAttribute(
             "onclick",
             `window.location.href='${waUrl}';`
