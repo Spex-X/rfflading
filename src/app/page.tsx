@@ -305,7 +305,7 @@ export default function Home() {
                 <p className="text-sm sm:text-base text-white/90 max-w-3xl">
                   É simples: ou você fica feliz com o conteúdo, ou recebe 100% do seu dinheiro de volta. Dentro de 7 dias, se decidir não continuar, basta nos contatar e faremos o reembolso sem burocracia.
                 </p>
-                <div className="mt-4">
+                <div className="mt-4 flex justify-center">
                   <a
                     href="#planos"
                     className="cta_btn inline-flex w-full sm:w-auto items-center justify-center rounded-md bg-black text-white px-5 py-2.5 font-semibold hover:bg-neutral-900 transition-colors"
