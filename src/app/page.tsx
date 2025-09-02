@@ -323,21 +323,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Dúvidas / WhatsApp - card vermelho centralizado */}
-        <section className="px-6 py-10 mt-8">
-          <div className="max-w-md mx-auto bg-red-800 text-white rounded-md shadow-[0_8px_0_rgba(0,0,0,0.35)] px-5 sm:px-6 py-6 text-center">
-            <h3 className="text-lg sm:text-xl font-semibold mb-1">Ainda está com dúvidas sobre a REIFLICK?</h3>
-            <p className="text-sm text-white/90 mb-4">Fale com nosso time agora mesmo pelo WhatsApp.</p>
-            <a
-              href="https://api.whatsapp.com/send/?phone=5565993553425&text=Ola+vim+do+site+quero+ajuda&type=phone_number&app_absent=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="signin__button inline-flex w-full sm:w-auto items-center justify-center rounded-md bg-green-600 text-white px-5 py-2.5 font-semibold hover:bg-green-700 transition-colors"
-            >
-              Conversar no WhatsApp
-            </a>
-          </div>
-        </section>
       </main>
 
       <footer className="border-t border-foreground/10 py-6 text-center text-sm text-foreground/60">
